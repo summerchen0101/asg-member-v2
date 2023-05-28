@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'sprite';
+
+html, body {
+  @apply h-full
+}
+
+.link {
+  @apply underline hover:no-underline
+}
+
+
+.btn-text {
+  @apply text-[18.5px] font-bold italic text-center text-[#f7f5ea];
+  text-shadow: 0px 1.5px 2.4px rgba(49, 31, 4, 0.7);
+}
+
+.btn-base {
+  @apply h-[35px] bg-[linear-gradient(to_top,#fffddf,#e5bc64,#e1b75e,#f8f6a4,#fffddf)] pt-[8.5px] pb-[9px] rounded-full border border-[#be9624];
+}
+
+input:focus, textarea:focus, select:focus{
+  outline: none;
+}
