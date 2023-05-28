@@ -18,10 +18,20 @@ html, body {
   text-shadow: 0px 1.5px 2.4px rgba(49, 31, 4, 0.7);
 }
 
+.text-shadow {
+  text-shadow: 0px 1.5px 2.4px rgba(49, 31, 4, 0.7);
+}
+
 .btn-base {
-  @apply h-[35px] bg-[linear-gradient(to_top,#fffddf,#e5bc64,#e1b75e,#f8f6a4,#fffddf)] pt-[8.5px] pb-[9px] rounded-full border border-[#be9624];
+  @apply bg-[linear-gradient(to_top,#fffddf,#e5bc64,#e1b75e,#f8f6a4,#fffddf)] rounded-full border border-[#be9624] flex items-center justify-center;
 }
 
 input:focus, textarea:focus, select:focus{
   outline: none;
+}
+
+
+[type='text']:focus, [type='email']:focus, [type='url']:focus, [type='password']:focus, [type='number']:focus, [type='date']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='week']:focus, [multiple]:focus, textarea:focus, select:focus {
+  outline: none;
+  box-shadow: none;
 }
