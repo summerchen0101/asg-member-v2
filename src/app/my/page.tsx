@@ -17,6 +17,11 @@ function page() {
             </div>
           </div>
         </div>
+        <div className="absolute top-0 right-0 mt-[58px] mr-4">
+          <div className="icon ic_top_message relative">
+            <div className="rounded-full w-2 h-2 bg-red-600 absolute top-0 right-0 -mt-1 -mr-1.5"></div>
+          </div>
+        </div>
         <div className="bg-white rounded-full text-center py-0.5 text-xs text-gray-500 w-fit px-4">
           晉級所需儲值金額 NT 4,000.00
         </div>
