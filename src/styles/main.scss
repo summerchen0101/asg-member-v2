@@ -35,3 +35,16 @@ input:focus, textarea:focus, select:focus{
   outline: none;
   box-shadow: none;
 }
+
+.bg-header {
+  @apply h-[43px] bg-[linear-gradient(to_top,#e1b75e,#fffda8)] flex items-center justify-center text-gray-700 tracking-wider text-base;
+}
+
+.white-box {
+  @apply bg-gradient-to-b from-white from-90% to-slate-200 rounded-lg shadow-md border border-white relative;
+}
+
+// .white-box-bottom {
+//   @apply h-2 bg-[linear-gradient(to_top,#eee,#fff)] rounded-b-lg absolute bottom-0 w-full;
+//   z-index: -1;
+// }
