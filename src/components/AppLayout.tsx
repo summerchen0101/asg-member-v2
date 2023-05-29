@@ -12,7 +12,7 @@ type Props = {
 
 function AppLayout({ title, children, active, pure }: Props) {
   return (
-    <div className="h-full bg-[#f4f5f7] overflow-y-auto pb-[100px]">
+    <div className="h-full bg-[#f4f5f7] overflow-y-auto pb-[110px]">
       <div className={cs('bg-header relative', !pure && 'bg-primary-gradient')}>
         <div className="icon ic_back absolute left-0 ml-3"></div>
         {title}
