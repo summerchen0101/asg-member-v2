@@ -1,12 +1,9 @@
+import AppLayout from '@/components/AppLayout'
 import React from 'react'
 
 function ContactPage() {
   return (
-    <div className="h-full bg-[#f4f5f7]">
-      <div className="bg-header relative">
-        <div className="icon ic_back absolute left-0 ml-3"></div>
-        客服中心
-      </div>
+    <AppLayout title="客服中心" active="service">
       <img src="/img/img_service.png" alt="" />
 
       <div className="space-y-4 mx-auto w-[340px] -mt-10">
@@ -27,7 +24,7 @@ function ContactPage() {
           </div>
         </div>
       </div>
-    </div>
+    </AppLayout>
   )
 }
 
