@@ -1,17 +1,19 @@
 'use client'
 import React, { ReactNode } from 'react'
 import AppFooter from './AppFooter'
+import cs from 'classnames'
 
 type Props = {
   title?: string
+  pure?: boolean
   children?: ReactNode
   active?: 'payment' | 'service' | 'my' | 'promotion'
 }
 
-function AppLayout({ title, children, active }: Props) {
+function AppLayout({ title, children, active, pure }: Props) {
   return (
-    <div className="h-full bg-[#f4f5f7]">
-      <div className="bg-header relative">
+    <div className="h-full bg-[#f4f5f7] overflow-y-auto pb-[100px]">
+      <div className={cs('bg-header relative', !pure && 'bg-primary-gradient')}>
         <div className="icon ic_back absolute left-0 ml-3"></div>
         {title}
       </div>

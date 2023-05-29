@@ -37,11 +37,22 @@ input:focus, textarea:focus, select:focus{
 }
 
 .bg-header {
-  @apply h-[43px] bg-[linear-gradient(to_top,#e1b75e,#fffda8)] flex items-center justify-center text-gray-700 tracking-wider text-base;
+  @apply h-[43px] flex items-center justify-center text-gray-700 tracking-wider text-base;
+  &.bg-primary-gradient {
+    @apply bg-[linear-gradient(to_top,#e1b75e,#fffda8)]
+  }
 }
 
 .white-box {
-  @apply bg-gradient-to-b from-white from-90% to-slate-200 rounded-lg shadow-md border border-white relative;
+  @apply bg-gradient-to-b from-white from-95% to-slate-200 rounded-lg shadow-md border border-white relative;
+}
+
+.loading-bar-bg {
+  @apply bg-[linear-gradient(to_top,#bc8b2c,#e6be67,#bc8b2c,#e6be67,#bc8b2c)]
+}
+
+.loading-bar-base {
+  @apply shadow-[inset_0px_1.5px_3.5px_0_#d5b261] bg-[rgba(211,178,113,0.2)] rounded-full border-[rgba(211,178,113,0.5)] overflow-hidden;
 }
 
 // .white-box-bottom {
