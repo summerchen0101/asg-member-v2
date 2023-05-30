@@ -1,4 +1,6 @@
+import AmountSelector from '@/components/AmountSelector'
 import AppLayout from '@/components/AppLayout'
+import CsvSelector from '@/components/CsvSelector'
 import TabGroup from '@/components/TabGroup'
 import { mapToOpts } from '@/utils'
 import React from 'react'
@@ -23,41 +25,9 @@ function PaymentPage() {
           </div>
         </div>
 
-        <div className="white-box p-3 mt-2 pb-5">
-          <div className="grid grid-cols-4 gap-x-2 gap-y-1">
-            <div className="icon btn_yellow2 text-shadow text-white italic font-medium pt-1.5 text-sm text-center">
-              1000
-            </div>
-            <div className="icon btn_white2 text-gray-500 italic font-medium pt-1.5 text-sm text-center">
-              5,000
-            </div>
-            <div className="icon btn_white2 text-gray-500 italic font-medium pt-1.5 text-sm text-center">
-              10,000
-            </div>
-            <div className="icon btn_white2 text-gray-500 italic font-medium pt-1.5 text-sm text-center">
-              50,000
-            </div>
+        <CsvSelector />
 
-            <div className="icon btn_white2 text-gray-500 italic font-medium pt-1.5 text-sm text-center">
-              最少
-            </div>
-            <div className="icon btn_white2 text-gray-500 italic font-medium pt-1.5 text-sm text-center">
-              最多
-            </div>
-            <div className="icon btn_white2 text-gray-500 italic font-medium pt-1.5 text-sm text-center">
-              清除
-            </div>
-          </div>
-          <div className="mt-2">
-            <div className="text-gray-500 text-sm font-medium mb-1">
-              存款金額
-            </div>
-            <input
-              className="bg-gray-200 placeholder:text-gray-400 text-sm rounded-lg px-2 py-1 w-full"
-              placeholder="請輸入金額1,000~100,000"
-            ></input>
-          </div>
-        </div>
+        <AmountSelector />
         <div className="icon btn_a2_base flex items-center justify-center text-primary-600 tracking-wider mx-auto mt-6">
           立即存款
         </div>
@@ -67,7 +37,7 @@ function PaymentPage() {
             <div className="bg-gradient-to-b from-[#fffda8] via-[#eaca72] to-[#c3962f] w-2 h-5 rounded-full"></div>
             <div className="text-gray-500 ml-2">注意事項</div>
           </div>
-          <div className="whitespace-pre-line text-gray-400">
+          <div className="whitespace-pre-line text-sm text-gray-400 leading-relaxed">
             {`※使用超商儲值須保留繳費明細並附上身分證明文件聯繫線上客服完成驗證。
 ※ 首次入款須聯繫客服完成身分驗證。
 ※ 請妥善保留繳費明細，於非綁定區域繳費，請上傳身分證件+繳費明細錄影達8秒至官方line，若無則無法上分。
