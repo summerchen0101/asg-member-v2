@@ -86,7 +86,7 @@ function page() {
             </div>
           </div>
         </div>
-        <div className="icon btn_a2_base flex items-center justify-center text-primary-500 tracking-wider mx-auto mt-6">
+        <div className="icon btn_a2_base flex items-center justify-center text-primary-600 tracking-wider mx-auto mt-6">
           登出
         </div>
       </div>
