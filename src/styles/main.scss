@@ -59,3 +59,7 @@ input:focus, textarea:focus, select:focus{
 //   @apply h-2 bg-[linear-gradient(to_top,#eee,#fff)] rounded-b-lg absolute bottom-0 w-full;
 //   z-index: -1;
 // }
+
+.sub-btn {
+  @apply border border-yellow-600 bg-white rounded-full shadow-md text-primary-500 italic
+}

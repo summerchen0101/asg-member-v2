@@ -11,7 +11,7 @@ function ContactPage() {
           <div className="icon ic_service_line mr-4"></div>
           <div className="text-gray-500">Line客服</div>
           <div className="flex-1"></div>
-          <div className="icon btn_a1_base text-yellow-600 flex items-center justify-center">
+          <div className="icon btn_a1_base text-primary-500 flex items-center justify-center">
             加入
           </div>
         </div>
@@ -19,7 +19,7 @@ function ContactPage() {
           <div className="icon ic_service_online mr-4"></div>
           <div className="text-gray-500">在線客服</div>
           <div className="flex-1"></div>
-          <div className="icon btn_a1_base text-yellow-600 flex items-center justify-center">
+          <div className="icon btn_a1_base text-primary-500 flex items-center justify-center">
             加入
           </div>
         </div>

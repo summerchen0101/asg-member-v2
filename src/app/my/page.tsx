@@ -9,12 +9,12 @@ function page() {
       <MyInfo />
       <div className="px-4">
         <div className="white-box h-20 w-full mx-auto mt-4 flex px-3 items-center">
-          <div className="text-yellow-600 font-medium text-[15px]">
+          <div className="text-primary-500 font-medium text-[15px]">
             NT128,300.00{' '}
             <div className="icon ic_reload inline-block -mb-1 ml-1"></div>
           </div>
           <div className="flex-1"></div>
-          <div className="text-yellow-600 text-xs text-center flex items-center gap-x-2">
+          <div className="text-primary-500 text-xs text-center flex items-center gap-x-2">
             <div className="">
               <div className="icon ic_mid_deposit"></div>
               <div className="mt-1">帳務</div>
@@ -86,7 +86,7 @@ function page() {
             </div>
           </div>
         </div>
-        <div className="icon btn_a2_base flex items-center justify-center text-yellow-600 tracking-wider mx-auto mt-6">
+        <div className="icon btn_a2_base flex items-center justify-center text-primary-500 tracking-wider mx-auto mt-6">
           登出
         </div>
       </div>
