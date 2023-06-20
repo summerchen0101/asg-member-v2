@@ -1,924 +1,1179 @@
 .icon {
-  background: url('/sprite_normal.png') no-repeat top left;
+    background: url('/sprite_normal.png') no-repeat top left;
 
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-      background: url('/sprite_retina.png') no-repeat top left;
-      background-size: 416px 8373px;
-  }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background: url('/sprite_retina.png') no-repeat top left;
+        background-size: 416px 10492px;
+    }
 
-  &.img_my {
-      background-position: 0 0;
-      width: 416px;
-      height: 290px;
-  }
-  &.logo_login {
-      background-position: 0 -293px;
-      width: 127px;
-      height: 44px;
-  }
-  &.bg_idphoto {
-      background-position: 0 -340px;
-      width: 66px;
-      height: 73px;
-  }
-  &.bankcard_add {
-      background-position: 0 -416px;
-      width: 289px;
-      height: 166px;
-  }
-  &.upload_bg3 {
-      background-position: 0 -585px;
-      width: 162px;
-      height: 102px;
-  }
-  &.img_idphoto {
-      background-position: 0 -690px;
-      width: 51px;
-      height: 51px;
-  }
-  &.btn_login_base {
-      background-position: 0 -744px;
-      width: 282px;
-      height: 52px;
-  }
-  &.ic_base_event {
-      background-position: 0 -799px;
-      width: 65px;
-      height: 42px;
-  }
-  &.upload_bg1 {
-      background-position: 0 -844px;
-      width: 162px;
-      height: 102px;
-  }
-  &.ic_base_logo {
-      background-position: 0 -949px;
-      width: 78px;
-      height: 62px;
-  }
-  &.ic_store_711 {
-      background-position: 0 -1014px;
-      width: 49px;
-      height: 49px;
-  }
-  &.upload_bg2 {
-      background-position: 0 -1066px;
-      width: 162px;
-      height: 102px;
-  }
-  &.bg_basebtn {
-      background-position: 0 -1171px;
-      width: 416px;
-      height: 82px;
-  }
-  &.tittle_myrank {
-      background-position: 0 -1256px;
-      width: 192px;
-      height: 52px;
-  }
-  &.ic__store_hilife {
-      background-position: 0 -1311px;
-      width: 49px;
-      height: 49px;
-  }
-  &.ic_rank_no1 {
-      background-position: 0 -1363px;
-      width: 35px;
-      height: 41px;
-  }
-  &.logo_appdnld {
-      background-position: 0 -1407px;
-      width: 46px;
-      height: 46px;
-  }
-  &.ic_store_ok {
-      background-position: 0 -1456px;
-      width: 49px;
-      height: 49px;
-  }
-  &.ic_rank_no2 {
-      background-position: 0 -1508px;
-      width: 35px;
-      height: 41px;
-  }
-  &.ic_rank_no3 {
-      background-position: 0 -1552px;
-      width: 35px;
-      height: 41px;
-  }
-  &.ic_info2 {
-      background-position: 0 -1596px;
-      width: 44px;
-      height: 44px;
-  }
-  &.ic_message1 {
-      background-position: 0 -1643px;
-      width: 42px;
-      height: 42px;
-  }
-  &.ic_store_family {
-      background-position: 0 -1688px;
-      width: 49px;
-      height: 49px;
-  }
-  &.tag_login_base {
-      background-position: 0 -1740px;
-      width: 282px;
-      height: 42px;
-  }
-  &.ic_mywallet_withdraw {
-      background-position: 0 -1785px;
-      width: 49px;
-      height: 49px;
-  }
-  &.ic_mid_vip {
-      background-position: 0 -1837px;
-      width: 34px;
-      height: 34px;
-  }
-  &.ic_info4 {
-      background-position: 0 -1874px;
-      width: 44px;
-      height: 44px;
-  }
-  &.ic_info3 {
-      background-position: 0 -1921px;
-      width: 44px;
-      height: 44px;
-  }
-  &.ic_mid_movie {
-      background-position: 0 -1968px;
-      width: 34px;
-      height: 34px;
-  }
-  &.ic_info1 {
-      background-position: 0 -2005px;
-      width: 44px;
-      height: 44px;
-  }
-  &.ic_mid_rank {
-      background-position: 0 -2052px;
-      width: 34px;
-      height: 34px;
-  }
-  &.ic_mywallet_deposit {
-      background-position: 0 -2089px;
-      width: 49px;
-      height: 49px;
-  }
-  &.gamelist_frame {
-      background-position: 0 -2141px;
-      width: 137px;
-      height: 137px;
-  }
-  &.ic_mywallet_card {
-      background-position: 0 -2281px;
-      width: 49px;
-      height: 49px;
-  }
-  &.btn_a2_base {
-      background-position: 0 -2333px;
-      width: 181px;
-      height: 44px;
-  }
-  &.ic_message2 {
-      background-position: 0 -2380px;
-      width: 42px;
-      height: 42px;
-  }
-  &.ic_mid_deposit {
-      background-position: 0 -2425px;
-      width: 34px;
-      height: 34px;
-  }
-  &.ic_event_share {
-      background-position: 0 -2462px;
-      width: 33px;
-      height: 33px;
-  }
-  &.ic_message3 {
-      background-position: 0 -2498px;
-      width: 42px;
-      height: 42px;
-  }
-  &.ic_mid_record {
-      background-position: 0 -2543px;
-      width: 34px;
-      height: 34px;
-  }
-  &.ic_message4 {
-      background-position: 0 -2580px;
-      width: 42px;
-      height: 42px;
-  }
-  &.ic_base_service_on {
-      background-position: 0 -2625px;
-      width: 31px;
-      height: 26px;
-  }
-  &.btn_a1_base {
-      background-position: 0 -2654px;
-      width: 112px;
-      height: 37px;
-  }
-  &.ic_bankcard_set {
-      background-position: 0 -2694px;
-      width: 69px;
-      height: 20px;
-  }
-  &.ic_nodata {
-      background-position: 0 -2717px;
-      width: 115px;
-      height: 109px;
-  }
-  &.ic_base_service_off {
-      background-position: 0 -2829px;
-      width: 31px;
-      height: 25px;
-  }
-  &.ic_service_online {
-      background-position: 0 -2857px;
-      width: 31px;
-      height: 25px;
-  }
-  &.ic_rank_no {
-      background-position: 0 -2885px;
-      width: 32px;
-      height: 32px;
-  }
-  &.ic_bonus_expired {
-      background-position: 0 -2920px;
-      width: 47px;
-      height: 47px;
-  }
-  &.ic_vip_bo1 {
-      background-position: 0 -2970px;
-      width: 49px;
-      height: 49px;
-  }
-  &.ic_vip_bo5 {
-      background-position: 0 -3022px;
-      width: 49px;
-      height: 49px;
-  }
-  &.ic_vip_bo3 {
-      background-position: 0 -3074px;
-      width: 49px;
-      height: 49px;
-  }
-  &.ic_vip_bo7 {
-      background-position: 0 -3126px;
-      width: 49px;
-      height: 49px;
-  }
-  &.ic_bonus_accept {
-      background-position: 0 -3178px;
-      width: 47px;
-      height: 47px;
-  }
-  &.ic_vip_bo4 {
-      background-position: 0 -3228px;
-      width: 49px;
-      height: 49px;
-  }
-  &.ic_vip_bo2 {
-      background-position: 0 -3280px;
-      width: 49px;
-      height: 49px;
-  }
-  &.ic_my_join {
-      background-position: 0 -3332px;
-      width: 49px;
-      height: 49px;
-  }
-  &.ic_my_event {
-      background-position: 0 -3384px;
-      width: 49px;
-      height: 49px;
-  }
-  &.ic_vip_bo6 {
-      background-position: 0 -3436px;
-      width: 49px;
-      height: 49px;
-  }
-  &.ic_my_help {
-      background-position: 0 -3488px;
-      width: 49px;
-      height: 49px;
-  }
-  &.ic_base_deposit_off {
-      background-position: 0 -3540px;
-      width: 27px;
-      height: 25px;
-  }
-  &.ic_my_about {
-      background-position: 0 -3568px;
-      width: 49px;
-      height: 49px;
-  }
-  &.ic_cardlock_base {
-      background-position: 0 -3620px;
-      width: 72px;
-      height: 20px;
-  }
-  &.ic_my_bonus {
-      background-position: 0 -3643px;
-      width: 49px;
-      height: 49px;
-  }
-  &.ic_my_wallet {
-      background-position: 0 -3695px;
-      width: 49px;
-      height: 49px;
-  }
-  &.ic_rank_vip12 {
-      background-position: 0 -3747px;
-      width: 62px;
-      height: 30px;
-  }
-  &.ic_my_accout {
-      background-position: 0 -3780px;
-      width: 49px;
-      height: 49px;
-  }
-  &.ic_my_lesson {
-      background-position: 0 -3832px;
-      width: 49px;
-      height: 49px;
-  }
-  &.ic_addcard_set {
-      background-position: 0 -3884px;
-      width: 85px;
-      height: 24px;
-  }
-  &.ic_my_app {
-      background-position: 0 -3911px;
-      width: 49px;
-      height: 49px;
-  }
-  &.ic_my_live {
-      background-position: 0 -3963px;
-      width: 49px;
-      height: 49px;
-  }
-  &.ic_my_message {
-      background-position: 0 -4015px;
-      width: 49px;
-      height: 49px;
-  }
-  &.ic_my_store {
-      background-position: 0 -4067px;
-      width: 49px;
-      height: 49px;
-  }
-  &.bankcard_select {
-      background-position: 0 -4119px;
-      width: 248px;
-      height: 146px;
-  }
-  &.ic_bonus_reject {
-      background-position: 0 -4268px;
-      width: 47px;
-      height: 47px;
-  }
-  &.ic_base_deposit_on {
-      background-position: 0 -4318px;
-      width: 28px;
-      height: 25px;
-  }
-  &.tag_event1 {
-      background-position: 0 -4346px;
-      width: 70px;
-      height: 24px;
-  }
-  &.ic_rank_vip11 {
-      background-position: 0 -4373px;
-      width: 62px;
-      height: 30px;
-  }
-  &.ic_rank_vip10 {
-      background-position: 0 -4406px;
-      width: 62px;
-      height: 30px;
-  }
-  &.ic_addcard_check {
-      background-position: 0 -4439px;
-      width: 85px;
-      height: 24px;
-  }
-  &.ic_mywallet_bonus {
-      background-position: 0 -4466px;
-      width: 31px;
-      height: 36px;
-  }
-  &.tag_event5 {
-      background-position: 0 -4505px;
-      width: 70px;
-      height: 24px;
-  }
-  &.ic_viplevel {
-      background-position: 0 -4532px;
-      width: 64px;
-      height: 22px;
-  }
-  &.tag_event2 {
-      background-position: 0 -4557px;
-      width: 70px;
-      height: 24px;
-  }
-  &.tag_event3 {
-      background-position: 0 -4584px;
-      width: 70px;
-      height: 24px;
-  }
-  &.tag_event4 {
-      background-position: 0 -4611px;
-      width: 70px;
-      height: 24px;
-  }
-  &.ic_base_my_off {
-      background-position: 0 -4638px;
-      width: 23px;
-      height: 24px;
-  }
-  &.img_joinus {
-      background-position: 0 -4665px;
-      width: 301px;
-      height: 14px;
-  }
-  &.ic_rank_vip8 {
-      background-position: 0 -4682px;
-      width: 62px;
-      height: 30px;
-  }
-  &.ic_rank_vip6 {
-      background-position: 0 -4715px;
-      width: 62px;
-      height: 30px;
-  }
-  &.ic_rank_vip5 {
-      background-position: 0 -4748px;
-      width: 62px;
-      height: 30px;
-  }
-  &.ic_base_my_on {
-      background-position: 0 -4781px;
-      width: 24px;
-      height: 25px;
-  }
-  &.ic_rank_vip9 {
-      background-position: 0 -4809px;
-      width: 62px;
-      height: 30px;
-  }
-  &.ic_rank_vip2 {
-      background-position: 0 -4842px;
-      width: 62px;
-      height: 30px;
-  }
-  &.ic_rank_vip7 {
-      background-position: 0 -4875px;
-      width: 62px;
-      height: 30px;
-  }
-  &.ic_rank_vip3 {
-      background-position: 0 -4908px;
-      width: 62px;
-      height: 30px;
-  }
-  &.ic_rank_vip4 {
-      background-position: 0 -4941px;
-      width: 62px;
-      height: 30px;
-  }
-  &.btn_yellow5 {
-      background-position: 0 -4974px;
-      width: 142px;
-      height: 47px;
-  }
-  &.btn_pop_y2 {
-      background-position: 0 -5024px;
-      width: 142px;
-      height: 47px;
-  }
-  &.ic_rank_vip1 {
-      background-position: 0 -5074px;
-      width: 62px;
-      height: 30px;
-  }
-  &.btn_my_login {
-      background-position: 0 -5107px;
-      width: 102px;
-      height: 29px;
-  }
-  &.ic_telegram {
-      background-position: 0 -5139px;
-      width: 26px;
-      height: 26px;
-  }
-  &.ic_service_line {
-      background-position: 0 -5168px;
-      width: 29px;
-      height: 28px;
-  }
-  &.ic_carddelete1 {
-      background-position: 0 -5199px;
-      width: 25px;
-      height: 28px;
-  }
-  &.ic_reject {
-      background-position: 0 -5230px;
-      width: 25px;
-      height: 25px;
-  }
-  &.btn_home_login {
-      background-position: 0 -5258px;
-      width: 72px;
-      height: 29px;
-  }
-  &.btn_home_signup {
-      background-position: 0 -5290px;
-      width: 72px;
-      height: 29px;
-  }
-  &.ic_login_vf {
-      background-position: 0 -5322px;
-      width: 22px;
-      height: 22px;
-  }
-  &.btn_yellow1 {
-      background-position: 0 -5347px;
-      width: 127px;
-      height: 50px;
-  }
-  &.ic_wechat {
-      background-position: 0 -5400px;
-      width: 26px;
-      height: 26px;
-  }
-  &.ic_login_cf {
-      background-position: 0 -5429px;
-      width: 22px;
-      height: 22px;
-  }
-  &.btn_yellow4 {
-      background-position: 0 -5454px;
-      width: 80px;
-      height: 45px;
-  }
-  &.btn_yellow2 {
-      background-position: 0 -5502px;
-      width: 84px;
-      height: 38px;
-  }
-  &.btn_yellow3 {
-      background-position: 0 -5543px;
-      width: 67px;
-      height: 37px;
-  }
-  &.detail_frametop {
-      background-position: 0 -5583px;
-      width: 416px;
-      height: 37px;
-  }
-  &.ic_reload {
-      background-position: 0 -5623px;
-      width: 24px;
-      height: 20px;
-  }
-  &.btn_yellow6 {
-      background-position: 0 -5646px;
-      width: 74px;
-      height: 37px;
-  }
-  &.ic_mywallet_wallet {
-      background-position: 0 -5686px;
-      width: 36px;
-      height: 33px;
-  }
-  &.ic_eyeclose {
-      background-position: 0 -5722px;
-      width: 22px;
-      height: 22px;
-  }
-  &.btn_white1 {
-      background-position: 0 -5747px;
-      width: 127px;
-      height: 50px;
-  }
-  &.ic_carddelete2 {
-      background-position: 0 -5800px;
-      width: 25px;
-      height: 28px;
-  }
-  &.ic_eyeclose2 {
-      background-position: 0 -5831px;
-      width: 22px;
-      height: 22px;
-  }
-  &.btn_white4 {
-      background-position: 0 -5856px;
-      width: 80px;
-      height: 45px;
-  }
-  &.btn_white2 {
-      background-position: 0 -5904px;
-      width: 84px;
-      height: 38px;
-  }
-  &.ic_accept {
-      background-position: 0 -5945px;
-      width: 25px;
-      height: 25px;
-  }
-  &.ic_line {
-      background-position: 0 -5973px;
-      width: 26px;
-      height: 26px;
-  }
-  &.ic_edit {
-      background-position: 0 -6002px;
-      width: 18px;
-      height: 18px;
-  }
-  &.btn_white6 {
-      background-position: 0 -6023px;
-      width: 74px;
-      height: 37px;
-  }
-  &.ic_login_id {
-      background-position: 0 -6063px;
-      width: 22px;
-      height: 22px;
-  }
-  &.btn_white3 {
-      background-position: 0 -6088px;
-      width: 67px;
-      height: 37px;
-  }
-  &.ic_login_agno {
-      background-position: 0 -6128px;
-      width: 22px;
-      height: 22px;
-  }
-  &.ic_eyeopen {
-      background-position: 0 -6153px;
-      width: 22px;
-      height: 22px;
-  }
-  &.ic_eyeopen2 {
-      background-position: 0 -6178px;
-      width: 22px;
-      height: 22px;
-  }
-  &.ic_help {
-      background-position: 0 -6203px;
-      width: 22px;
-      height: 22px;
-  }
-  &.ic_login_pw {
-      background-position: 0 -6228px;
-      width: 22px;
-      height: 22px;
-  }
-  &.btn_pop_close {
-      background-position: 0 -6253px;
-      width: 33px;
-      height: 32px;
-  }
-  &.ic_top_message {
-      background-position: 0 -6288px;
-      width: 30px;
-      height: 22px;
-  }
-  &.ic_back {
-      background-position: 0 -6313px;
-      width: 13px;
-      height: 20px;
-  }
-  &.ic_rank_up {
-      background-position: 0 -6336px;
-      width: 15px;
-      height: 20px;
-  }
-  &.ic_copy {
-      background-position: 0 -6359px;
-      width: 18px;
-      height: 18px;
-  }
-  &.ic_login_phone {
-      background-position: 0 -6380px;
-      width: 22px;
-      height: 22px;
-  }
-  &.ic_arrow {
-      background-position: 0 -6405px;
-      width: 9px;
-      height: 13px;
-  }
-  &.ic_copy2 {
-      background-position: 0 -6421px;
-      width: 21px;
-      height: 21px;
-  }
-  &.ic_notice {
-      background-position: 0 -6445px;
-      width: 15px;
-      height: 14px;
-  }
-  &.logo_alive_ab {
-      background-position: 0 -6462px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_alive_dg {
-      background-position: 0 -6511px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_alive_kg {
-      background-position: 0 -6560px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_alive_obl {
-      background-position: 0 -6609px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_alive_og {
-      background-position: 0 -6658px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_alive_sa {
-      background-position: 0 -6707px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_alive_wgl {
-      background-position: 0 -6756px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_alive_wm {
-      background-position: 0 -6805px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_ball_apl {
-      background-position: 0 -6854px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_ball_at {
-      background-position: 0 -6903px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_ball_lee {
-      background-position: 0 -6952px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_ball_obb {
-      background-position: 0 -7001px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_ball_sba {
-      background-position: 0 -7050px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_ball_wgba {
-      background-position: 0 -7099px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_chess_bych {
-      background-position: 0 -7148px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_chess_gr {
-      background-position: 0 -7197px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_chess_obch {
-      background-position: 0 -7246px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_egame_avia {
-      background-position: 0 -7295px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_egame_obvg {
-      background-position: 0 -7344px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_fishing_bwin {
-      background-position: 0 -7393px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_fishing_byfh {
-      background-position: 0 -7442px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_fishing_gr {
-      background-position: 0 -7491px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_fishing_obfh {
-      background-position: 0 -7540px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_fishing_zg {
-      background-position: 0 -7589px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_slot_apl {
-      background-position: 0 -7638px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_slot_av {
-      background-position: 0 -7687px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_slot_bng {
-      background-position: 0 -7736px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_slot_bwin {
-      background-position: 0 -7785px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_slot_gr {
-      background-position: 0 -7834px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_slot_obsl {
-      background-position: 0 -7883px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_slot_rsg {
-      background-position: 0 -7932px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_slot_zg {
-      background-position: 0 -7981px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_sport_fb {
-      background-position: 0 -8030px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_sport_obs {
-      background-position: 0 -8079px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_sport_pin {
-      background-position: 0 -8128px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_sport_ssp {
-      background-position: 0 -8177px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_sport_wgs {
-      background-position: 0 -8226px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_chess_gdn {
-      background-position: 0 -8275px;
-      width: 46px;
-      height: 46px;
-  }
-  &.logo_chess_tz {
-      background-position: 0 -8324px;
-      width: 46px;
-      height: 46px;
-  }
+    &.logo_login {
+        background-position: 0 0;
+        width: 127px;
+        height: 44px;
+    }
+    &.bg_idphoto {
+        background-position: 0 -46px;
+        width: 66px;
+        height: 73px;
+    }
+    &.bankcard_add {
+        background-position: 0 -121px;
+        width: 289px;
+        height: 166px;
+    }
+    &.upload_bg3 {
+        background-position: 0 -289px;
+        width: 162px;
+        height: 102px;
+    }
+    &.img_idphoto {
+        background-position: 0 -393px;
+        width: 51px;
+        height: 51px;
+    }
+    &.btn_login_base {
+        background-position: 0 -446px;
+        width: 282px;
+        height: 52px;
+    }
+    &.ic_base_event {
+        background-position: 0 -500px;
+        width: 65px;
+        height: 42px;
+    }
+    &.upload_bg1 {
+        background-position: 0 -544px;
+        width: 162px;
+        height: 102px;
+    }
+    &.ic_base_logo {
+        background-position: 0 -648px;
+        width: 78px;
+        height: 62px;
+    }
+    &.ic_store_711 {
+        background-position: 0 -712px;
+        width: 49px;
+        height: 49px;
+    }
+    &.upload_bg2 {
+        background-position: 0 -763px;
+        width: 162px;
+        height: 102px;
+    }
+    &.bg_basebtn {
+        background-position: 0 -867px;
+        width: 416px;
+        height: 82px;
+    }
+    &.tittle_myrank {
+        background-position: 0 -951px;
+        width: 192px;
+        height: 52px;
+    }
+    &.ic__store_hilife {
+        background-position: 0 -1005px;
+        width: 49px;
+        height: 49px;
+    }
+    &.ic_rank_no1 {
+        background-position: 0 -1056px;
+        width: 35px;
+        height: 41px;
+    }
+    &.logo_appdnld {
+        background-position: 0 -1099px;
+        width: 46px;
+        height: 46px;
+    }
+    &.ic_store_ok {
+        background-position: 0 -1147px;
+        width: 49px;
+        height: 49px;
+    }
+    &.ic_rank_no2 {
+        background-position: 0 -1198px;
+        width: 35px;
+        height: 41px;
+    }
+    &.ic_rank_no3 {
+        background-position: 0 -1241px;
+        width: 35px;
+        height: 41px;
+    }
+    &.ic_info2 {
+        background-position: 0 -1284px;
+        width: 44px;
+        height: 44px;
+    }
+    &.ic_message1 {
+        background-position: 0 -1330px;
+        width: 42px;
+        height: 42px;
+    }
+    &.ic_store_family {
+        background-position: 0 -1374px;
+        width: 49px;
+        height: 49px;
+    }
+    &.tag_login_base {
+        background-position: 0 -1425px;
+        width: 282px;
+        height: 42px;
+    }
+    &.ic_mywallet_withdraw {
+        background-position: 0 -1469px;
+        width: 49px;
+        height: 49px;
+    }
+    &.ic_mid_vip {
+        background-position: 0 -1520px;
+        width: 34px;
+        height: 34px;
+    }
+    &.ic_info4 {
+        background-position: 0 -1556px;
+        width: 44px;
+        height: 44px;
+    }
+    &.ic_info3 {
+        background-position: 0 -1602px;
+        width: 44px;
+        height: 44px;
+    }
+    &.ic_mid_movie {
+        background-position: 0 -1648px;
+        width: 34px;
+        height: 34px;
+    }
+    &.ic_info1 {
+        background-position: 0 -1684px;
+        width: 44px;
+        height: 44px;
+    }
+    &.ic_mid_rank {
+        background-position: 0 -1730px;
+        width: 34px;
+        height: 34px;
+    }
+    &.ic_mywallet_deposit {
+        background-position: 0 -1766px;
+        width: 49px;
+        height: 49px;
+    }
+    &.gamelist_frame {
+        background-position: 0 -1817px;
+        width: 137px;
+        height: 137px;
+    }
+    &.ic_mywallet_card {
+        background-position: 0 -1956px;
+        width: 49px;
+        height: 49px;
+    }
+    &.btn_a2_base {
+        background-position: 0 -2007px;
+        width: 181px;
+        height: 44px;
+    }
+    &.ic_message2 {
+        background-position: 0 -2053px;
+        width: 42px;
+        height: 42px;
+    }
+    &.ic_mid_deposit {
+        background-position: 0 -2097px;
+        width: 34px;
+        height: 34px;
+    }
+    &.ic_event_share {
+        background-position: 0 -2133px;
+        width: 33px;
+        height: 33px;
+    }
+    &.ic_message3 {
+        background-position: 0 -2168px;
+        width: 42px;
+        height: 42px;
+    }
+    &.ic_mid_record {
+        background-position: 0 -2212px;
+        width: 34px;
+        height: 34px;
+    }
+    &.ic_message4 {
+        background-position: 0 -2248px;
+        width: 42px;
+        height: 42px;
+    }
+    &.ic_base_service_on {
+        background-position: 0 -2292px;
+        width: 31px;
+        height: 26px;
+    }
+    &.btn_a1_base {
+        background-position: 0 -2320px;
+        width: 112px;
+        height: 37px;
+    }
+    &.ic_bankcard_set {
+        background-position: 0 -2359px;
+        width: 69px;
+        height: 20px;
+    }
+    &.ic_nodata {
+        background-position: 0 -2381px;
+        width: 115px;
+        height: 109px;
+    }
+    &.ic_base_service_off {
+        background-position: 0 -2492px;
+        width: 31px;
+        height: 25px;
+    }
+    &.ic_service_online {
+        background-position: 0 -2519px;
+        width: 31px;
+        height: 25px;
+    }
+    &.ic_rank_no {
+        background-position: 0 -2546px;
+        width: 32px;
+        height: 32px;
+    }
+    &.ic_bonus_expired {
+        background-position: 0 -2580px;
+        width: 47px;
+        height: 47px;
+    }
+    &.ic_vip_bo1 {
+        background-position: 0 -2629px;
+        width: 49px;
+        height: 49px;
+    }
+    &.ic_vip_bo5 {
+        background-position: 0 -2680px;
+        width: 49px;
+        height: 49px;
+    }
+    &.ic_vip_bo3 {
+        background-position: 0 -2731px;
+        width: 49px;
+        height: 49px;
+    }
+    &.ic_vip_bo7 {
+        background-position: 0 -2782px;
+        width: 49px;
+        height: 49px;
+    }
+    &.ic_bonus_accept {
+        background-position: 0 -2833px;
+        width: 47px;
+        height: 47px;
+    }
+    &.ic_vip_bo4 {
+        background-position: 0 -2882px;
+        width: 49px;
+        height: 49px;
+    }
+    &.ic_vip_bo2 {
+        background-position: 0 -2933px;
+        width: 49px;
+        height: 49px;
+    }
+    &.ic_my_join {
+        background-position: 0 -2984px;
+        width: 49px;
+        height: 49px;
+    }
+    &.ic_my_event {
+        background-position: 0 -3035px;
+        width: 49px;
+        height: 49px;
+    }
+    &.ic_vip_bo6 {
+        background-position: 0 -3086px;
+        width: 49px;
+        height: 49px;
+    }
+    &.ic_my_help {
+        background-position: 0 -3137px;
+        width: 49px;
+        height: 49px;
+    }
+    &.ic_base_deposit_off {
+        background-position: 0 -3188px;
+        width: 27px;
+        height: 25px;
+    }
+    &.ic_my_about {
+        background-position: 0 -3215px;
+        width: 49px;
+        height: 49px;
+    }
+    &.ic_cardlock_base {
+        background-position: 0 -3266px;
+        width: 72px;
+        height: 20px;
+    }
+    &.ic_my_bonus {
+        background-position: 0 -3288px;
+        width: 49px;
+        height: 49px;
+    }
+    &.ic_my_wallet {
+        background-position: 0 -3339px;
+        width: 49px;
+        height: 49px;
+    }
+    &.ic_rank_vip12 {
+        background-position: 0 -3390px;
+        width: 62px;
+        height: 30px;
+    }
+    &.ic_my_accout {
+        background-position: 0 -3422px;
+        width: 49px;
+        height: 49px;
+    }
+    &.ic_my_lesson {
+        background-position: 0 -3473px;
+        width: 49px;
+        height: 49px;
+    }
+    &.ic_addcard_set {
+        background-position: 0 -3524px;
+        width: 85px;
+        height: 24px;
+    }
+    &.ic_my_app {
+        background-position: 0 -3550px;
+        width: 49px;
+        height: 49px;
+    }
+    &.ic_my_live {
+        background-position: 0 -3601px;
+        width: 49px;
+        height: 49px;
+    }
+    &.ic_my_message {
+        background-position: 0 -3652px;
+        width: 49px;
+        height: 49px;
+    }
+    &.ic_my_store {
+        background-position: 0 -3703px;
+        width: 49px;
+        height: 49px;
+    }
+    &.bankcard_select {
+        background-position: 0 -3754px;
+        width: 248px;
+        height: 146px;
+    }
+    &.ic_bonus_reject {
+        background-position: 0 -3902px;
+        width: 47px;
+        height: 47px;
+    }
+    &.ic_base_deposit_on {
+        background-position: 0 -3951px;
+        width: 28px;
+        height: 25px;
+    }
+    &.tag_event1 {
+        background-position: 0 -3978px;
+        width: 70px;
+        height: 24px;
+    }
+    &.ic_rank_vip11 {
+        background-position: 0 -4004px;
+        width: 62px;
+        height: 30px;
+    }
+    &.ic_rank_vip10 {
+        background-position: 0 -4036px;
+        width: 62px;
+        height: 30px;
+    }
+    &.ic_addcard_check {
+        background-position: 0 -4068px;
+        width: 85px;
+        height: 24px;
+    }
+    &.ic_mywallet_bonus {
+        background-position: 0 -4094px;
+        width: 31px;
+        height: 36px;
+    }
+    &.tag_event5 {
+        background-position: 0 -4132px;
+        width: 70px;
+        height: 24px;
+    }
+    &.ic_viplevel {
+        background-position: 0 -4158px;
+        width: 64px;
+        height: 22px;
+    }
+    &.tag_event2 {
+        background-position: 0 -4182px;
+        width: 70px;
+        height: 24px;
+    }
+    &.tag_event3 {
+        background-position: 0 -4208px;
+        width: 70px;
+        height: 24px;
+    }
+    &.tag_event4 {
+        background-position: 0 -4234px;
+        width: 70px;
+        height: 24px;
+    }
+    &.ic_base_my_off {
+        background-position: 0 -4260px;
+        width: 23px;
+        height: 24px;
+    }
+    &.img_joinus {
+        background-position: 0 -4286px;
+        width: 301px;
+        height: 14px;
+    }
+    &.ic_rank_vip8 {
+        background-position: 0 -4302px;
+        width: 62px;
+        height: 30px;
+    }
+    &.ic_rank_vip6 {
+        background-position: 0 -4334px;
+        width: 62px;
+        height: 30px;
+    }
+    &.ic_rank_vip5 {
+        background-position: 0 -4366px;
+        width: 62px;
+        height: 30px;
+    }
+    &.ic_base_my_on {
+        background-position: 0 -4398px;
+        width: 24px;
+        height: 25px;
+    }
+    &.ic_rank_vip9 {
+        background-position: 0 -4425px;
+        width: 62px;
+        height: 30px;
+    }
+    &.ic_rank_vip2 {
+        background-position: 0 -4457px;
+        width: 62px;
+        height: 30px;
+    }
+    &.ic_rank_vip7 {
+        background-position: 0 -4489px;
+        width: 62px;
+        height: 30px;
+    }
+    &.ic_rank_vip3 {
+        background-position: 0 -4521px;
+        width: 62px;
+        height: 30px;
+    }
+    &.ic_rank_vip4 {
+        background-position: 0 -4553px;
+        width: 62px;
+        height: 30px;
+    }
+    &.btn_yellow5 {
+        background-position: 0 -4585px;
+        width: 142px;
+        height: 47px;
+    }
+    &.btn_pop_y2 {
+        background-position: 0 -4634px;
+        width: 142px;
+        height: 47px;
+    }
+    &.ic_rank_vip1 {
+        background-position: 0 -4683px;
+        width: 62px;
+        height: 30px;
+    }
+    &.btn_my_login {
+        background-position: 0 -4715px;
+        width: 102px;
+        height: 29px;
+    }
+    &.ic_telegram {
+        background-position: 0 -4746px;
+        width: 26px;
+        height: 26px;
+    }
+    &.ic_service_line {
+        background-position: 0 -4774px;
+        width: 29px;
+        height: 28px;
+    }
+    &.ic_carddelete1 {
+        background-position: 0 -4804px;
+        width: 25px;
+        height: 28px;
+    }
+    &.ic_reject {
+        background-position: 0 -4834px;
+        width: 25px;
+        height: 25px;
+    }
+    &.btn_home_login {
+        background-position: 0 -4861px;
+        width: 72px;
+        height: 29px;
+    }
+    &.btn_home_signup {
+        background-position: 0 -4892px;
+        width: 72px;
+        height: 29px;
+    }
+    &.ic_login_vf {
+        background-position: 0 -4923px;
+        width: 22px;
+        height: 22px;
+    }
+    &.btn_yellow1 {
+        background-position: 0 -4947px;
+        width: 127px;
+        height: 50px;
+    }
+    &.ic_wechat {
+        background-position: 0 -4999px;
+        width: 26px;
+        height: 26px;
+    }
+    &.ic_login_cf {
+        background-position: 0 -5027px;
+        width: 22px;
+        height: 22px;
+    }
+    &.btn_yellow4 {
+        background-position: 0 -5051px;
+        width: 80px;
+        height: 45px;
+    }
+    &.btn_yellow2 {
+        background-position: 0 -5098px;
+        width: 84px;
+        height: 38px;
+    }
+    &.btn_yellow3 {
+        background-position: 0 -5138px;
+        width: 67px;
+        height: 37px;
+    }
+    &.detail_frametop {
+        background-position: 0 -5177px;
+        width: 416px;
+        height: 37px;
+    }
+    &.ic_reload {
+        background-position: 0 -5216px;
+        width: 24px;
+        height: 20px;
+    }
+    &.btn_yellow6 {
+        background-position: 0 -5238px;
+        width: 74px;
+        height: 37px;
+    }
+    &.ic_mywallet_wallet {
+        background-position: 0 -5277px;
+        width: 36px;
+        height: 33px;
+    }
+    &.ic_eyeclose {
+        background-position: 0 -5312px;
+        width: 22px;
+        height: 22px;
+    }
+    &.btn_white1 {
+        background-position: 0 -5336px;
+        width: 127px;
+        height: 50px;
+    }
+    &.ic_carddelete2 {
+        background-position: 0 -5388px;
+        width: 25px;
+        height: 28px;
+    }
+    &.ic_eyeclose2 {
+        background-position: 0 -5418px;
+        width: 22px;
+        height: 22px;
+    }
+    &.btn_white4 {
+        background-position: 0 -5442px;
+        width: 80px;
+        height: 45px;
+    }
+    &.btn_white2 {
+        background-position: 0 -5489px;
+        width: 84px;
+        height: 38px;
+    }
+    &.ic_accept {
+        background-position: 0 -5529px;
+        width: 25px;
+        height: 25px;
+    }
+    &.ic_line {
+        background-position: 0 -5556px;
+        width: 26px;
+        height: 26px;
+    }
+    &.ic_edit {
+        background-position: 0 -5584px;
+        width: 18px;
+        height: 18px;
+    }
+    &.btn_white6 {
+        background-position: 0 -5604px;
+        width: 74px;
+        height: 37px;
+    }
+    &.ic_login_id {
+        background-position: 0 -5643px;
+        width: 22px;
+        height: 22px;
+    }
+    &.btn_white3 {
+        background-position: 0 -5667px;
+        width: 67px;
+        height: 37px;
+    }
+    &.ic_login_agno {
+        background-position: 0 -5706px;
+        width: 22px;
+        height: 22px;
+    }
+    &.ic_eyeopen {
+        background-position: 0 -5730px;
+        width: 22px;
+        height: 22px;
+    }
+    &.ic_eyeopen2 {
+        background-position: 0 -5754px;
+        width: 22px;
+        height: 22px;
+    }
+    &.ic_help {
+        background-position: 0 -5778px;
+        width: 22px;
+        height: 22px;
+    }
+    &.ic_login_pw {
+        background-position: 0 -5802px;
+        width: 22px;
+        height: 22px;
+    }
+    &.btn_pop_close {
+        background-position: 0 -5826px;
+        width: 33px;
+        height: 32px;
+    }
+    &.ic_top_message {
+        background-position: 0 -5860px;
+        width: 30px;
+        height: 22px;
+    }
+    &.ic_back {
+        background-position: 0 -5884px;
+        width: 13px;
+        height: 20px;
+    }
+    &.ic_rank_up {
+        background-position: 0 -5906px;
+        width: 15px;
+        height: 20px;
+    }
+    &.ic_copy {
+        background-position: 0 -5928px;
+        width: 18px;
+        height: 18px;
+    }
+    &.ic_login_phone {
+        background-position: 0 -5948px;
+        width: 22px;
+        height: 22px;
+    }
+    &.ic_arrow {
+        background-position: 0 -5972px;
+        width: 9px;
+        height: 13px;
+    }
+    &.ic_copy2 {
+        background-position: 0 -5987px;
+        width: 21px;
+        height: 21px;
+    }
+    &.ic_notice {
+        background-position: 0 -6010px;
+        width: 15px;
+        height: 14px;
+    }
+    &.event_inv_tt1 {
+        background-position: 0 -6026px;
+        width: 341px;
+        height: 55px;
+    }
+    &.event_inv_tt1 {
+        background-position: 0 -6083px;
+        width: 341px;
+        height: 55px;
+    }
+    &.event_inv_w1 {
+        background-position: 0 -6140px;
+        width: 312px;
+        height: 81px;
+    }
+    &.event_inv_tt2 {
+        background-position: 0 -6223px;
+        width: 283px;
+        height: 54px;
+    }
+    &.btn_yellow7 {
+        background-position: 0 -6279px;
+        width: 292px;
+        height: 47px;
+    }
+    &.ic_inv_copylink {
+        background-position: 0 -6328px;
+        width: 29px;
+        height: 29px;
+    }
+    &.ic_inv_qrcode {
+        background-position: 0 -6359px;
+        width: 29px;
+        height: 29px;
+    }
+    &.ic_event_note {
+        background-position: 0 -6390px;
+        width: 22px;
+        height: 22px;
+    }
+    &.ic_qr_share {
+        background-position: 0 -6414px;
+        width: 22px;
+        height: 22px;
+    }
+    &.ic_qr_copy {
+        background-position: 0 -6438px;
+        width: 22px;
+        height: 22px;
+    }
+    &.ic_fishing_left_byfh_on {
+        background-position: 0 -6462px;
+        width: 59px;
+        height: 57px;
+    }
+    &.ic_fishing_left_byfh_off {
+        background-position: 0 -6521px;
+        width: 59px;
+        height: 57px;
+    }
+    &.ic_fishing_left_gr_on {
+        background-position: 0 -6580px;
+        width: 59px;
+        height: 57px;
+    }
+    &.ic_fishing_left_obfh_on {
+        background-position: 0 -6639px;
+        width: 59px;
+        height: 57px;
+    }
+    &.ic_fishing_left_zg_on {
+        background-position: 0 -6698px;
+        width: 59px;
+        height: 57px;
+    }
+    &.ic_fishing_left_bwin_on {
+        background-position: 0 -6757px;
+        width: 59px;
+        height: 57px;
+    }
+    &.ic_fishing_left_gr_off {
+        background-position: 0 -6816px;
+        width: 59px;
+        height: 57px;
+    }
+    &.ic_fishing_left_zg_off {
+        background-position: 0 -6875px;
+        width: 59px;
+        height: 57px;
+    }
+    &.ic_fishing_left_bwin_off {
+        background-position: 0 -6934px;
+        width: 59px;
+        height: 57px;
+    }
+    &.ic_fishing_left_obfh_off {
+        background-position: 0 -6993px;
+        width: 59px;
+        height: 57px;
+    }
+    &.ic_left_fishing_on {
+        background-position: 0 -7052px;
+        width: 37px;
+        height: 37px;
+    }
+    &.ic_left_ball_on {
+        background-position: 0 -7091px;
+        width: 37px;
+        height: 37px;
+    }
+    &.ic_left_egame_on {
+        background-position: 0 -7130px;
+        width: 37px;
+        height: 37px;
+    }
+    &.ic_left_sport_on {
+        background-position: 0 -7169px;
+        width: 37px;
+        height: 37px;
+    }
+    &.ic_left_slot_on {
+        background-position: 0 -7208px;
+        width: 37px;
+        height: 37px;
+    }
+    &.ic_left_alive_on {
+        background-position: 0 -7247px;
+        width: 37px;
+        height: 37px;
+    }
+    &.ic_left_chess_on {
+        background-position: 0 -7286px;
+        width: 37px;
+        height: 37px;
+    }
+    &.ic_left_hot_on {
+        background-position: 0 -7325px;
+        width: 37px;
+        height: 37px;
+    }
+    &.ic_left_alive_off {
+        background-position: 0 -7364px;
+        width: 37px;
+        height: 37px;
+    }
+    &.ic_left_sport_off {
+        background-position: 0 -7403px;
+        width: 37px;
+        height: 37px;
+    }
+    &.ic_left_ball_off {
+        background-position: 0 -7442px;
+        width: 37px;
+        height: 37px;
+    }
+    &.ic_left_fishing_off {
+        background-position: 0 -7481px;
+        width: 37px;
+        height: 37px;
+    }
+    &.ic_left_chess_off {
+        background-position: 0 -7520px;
+        width: 37px;
+        height: 37px;
+    }
+    &.ic_left_hot_off {
+        background-position: 0 -7559px;
+        width: 37px;
+        height: 37px;
+    }
+    &.ic_left_slot_off {
+        background-position: 0 -7598px;
+        width: 37px;
+        height: 37px;
+    }
+    &.ic_left_egame_off {
+        background-position: 0 -7637px;
+        width: 37px;
+        height: 37px;
+    }
+    &.ic_slot_left_gr_on {
+        background-position: 0 -7676px;
+        width: 59px;
+        height: 57px;
+    }
+    &.ic_slot_left_obsl_on {
+        background-position: 0 -7735px;
+        width: 59px;
+        height: 57px;
+    }
+    &.ic_slot_left_zg_on {
+        background-position: 0 -7794px;
+        width: 59px;
+        height: 57px;
+    }
+    &.ic_slot_left_bng_on {
+        background-position: 0 -7853px;
+        width: 59px;
+        height: 57px;
+    }
+    &.ic_slot_left_bwin_on {
+        background-position: 0 -7912px;
+        width: 59px;
+        height: 57px;
+    }
+    &.ic_slot_left_rsg_on {
+        background-position: 0 -7971px;
+        width: 59px;
+        height: 57px;
+    }
+    &.ic_slot_left_apl_on {
+        background-position: 0 -8030px;
+        width: 59px;
+        height: 57px;
+    }
+    &.ic_slot_left_avl_on {
+        background-position: 0 -8089px;
+        width: 59px;
+        height: 57px;
+    }
+    &.ic_slot_left_gr_off {
+        background-position: 0 -8148px;
+        width: 59px;
+        height: 57px;
+    }
+    &.ic_slot_left_zg_off {
+        background-position: 0 -8207px;
+        width: 59px;
+        height: 57px;
+    }
+    &.ic_slot_left_rsg_off {
+        background-position: 0 -8266px;
+        width: 59px;
+        height: 57px;
+    }
+    &.ic_slot_left_bwin_off {
+        background-position: 0 -8325px;
+        width: 59px;
+        height: 57px;
+    }
+    &.ic_slot_left_avl_off {
+        background-position: 0 -8384px;
+        width: 59px;
+        height: 57px;
+    }
+    &.ic_slot_left_bng_off {
+        background-position: 0 -8443px;
+        width: 59px;
+        height: 57px;
+    }
+    &.ic_slot_left_apl_off {
+        background-position: 0 -8502px;
+        width: 59px;
+        height: 57px;
+    }
+    &.ic_slot_left_obsl_off {
+        background-position: 0 -8561px;
+        width: 59px;
+        height: 57px;
+    }
+    &.logo_fishing_zg {
+        background-position: 0 -8620px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_slot_zg {
+        background-position: 0 -8668px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_chess_bych {
+        background-position: 0 -8716px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_fishing_byfh {
+        background-position: 0 -8764px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_egame_avia {
+        background-position: 0 -8812px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_sport_obs {
+        background-position: 0 -8860px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_sport_pin {
+        background-position: 0 -8908px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_chess_gr {
+        background-position: 0 -8956px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_alive_wm {
+        background-position: 0 -9004px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_ball_lee {
+        background-position: 0 -9052px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_chess_obch {
+        background-position: 0 -9100px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_fishing_obfh {
+        background-position: 0 -9148px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_slot_obsl {
+        background-position: 0 -9196px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_alive_og {
+        background-position: 0 -9244px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_ball_obb {
+        background-position: 0 -9292px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_alive_wgl {
+        background-position: 0 -9340px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_ball_wgba {
+        background-position: 0 -9388px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_sport_wgs {
+        background-position: 0 -9436px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_fishing_gr {
+        background-position: 0 -9484px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_slot_gr {
+        background-position: 0 -9532px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_alive_obl {
+        background-position: 0 -9580px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_egame_obvg {
+        background-position: 0 -9628px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_alive_kg {
+        background-position: 0 -9676px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_ball_sba {
+        background-position: 0 -9724px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_sport_ssp {
+        background-position: 0 -9772px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_fishing_bwin {
+        background-position: 0 -9820px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_slot_bwin {
+        background-position: 0 -9868px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_slot_rsg {
+        background-position: 0 -9916px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_alive_ab {
+        background-position: 0 -9964px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_ball_apl {
+        background-position: 0 -10012px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_slot_apl {
+        background-position: 0 -10060px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_slot_av {
+        background-position: 0 -10108px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_sport_fb {
+        background-position: 0 -10156px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_alive_dg {
+        background-position: 0 -10204px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_alive_sa {
+        background-position: 0 -10252px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_slot_bng {
+        background-position: 0 -10300px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_ball_at {
+        background-position: 0 -10348px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_chess_tz {
+        background-position: 0 -10396px;
+        width: 46px;
+        height: 46px;
+    }
+    &.logo_chess_gdn {
+        background-position: 0 -10444px;
+        width: 46px;
+        height: 46px;
+    }
 }
