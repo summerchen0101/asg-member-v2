@@ -13,10 +13,15 @@ type Props = {
 function AppLayout({ title, children, active, pure }: Props) {
   return (
     <div className="h-full bg-[#f4f5f7] overflow-y-auto pb-[110px]">
-      <div className={cs('bg-header relative', !pure && 'bg-primary-gradient')}>
-        <div className="icon ic_back absolute left-0 ml-3"></div>
-        {title}
-      </div>
+      {title ? (
+        <div
+          className={cs('bg-header relative', !pure && 'bg-primary-gradient')}
+        >
+          <div className="icon ic_back absolute left-0 ml-3"></div>
+          {title}
+        </div>
+      ) : null}
+
       {children}
       {/* <div className="fixed bottom-0 w-full h-[68px]">
         <img src="/img/bg_basebtn.png" className="absolute top-0" alt="" />
