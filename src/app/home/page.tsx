@@ -5,17 +5,32 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import Marquee from 'react-fast-marquee'
+import cs from 'classnames'
+import { useSwiper } from 'swiper/react'
+import { random } from 'lodash'
+import { useState } from 'react'
+import { FreeMode, Navigation, Thumbs, Swiper as SwiperType } from 'swiper'
 
+type Props = {
+  index: number
+}
+function SlideBtn({ index }: Props) {
+  const swiper = useSwiper()
+  return (
+    <div
+      className="w-16 h-16 bg-slate-400 rounded-md"
+      onClick={() => swiper.slideTo(index)}
+    >
+      {index}
+    </div>
+  )
+}
 function HomePage() {
+  const platCount = 5
+  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType>()
   return (
     <AppLayout active="service">
-      <Swiper
-        spaceBetween={50}
-        slidesPerView={1}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
-        autoplay
-      >
+      <Swiper spaceBetween={50} slidesPerView={1} autoplay>
         <SwiperSlide>
           <img src="/img/banner_index.jpg" alt="" />
         </SwiperSlide>
@@ -65,6 +80,55 @@ function HomePage() {
               <div className="text-center text-primary-500 text-sm">VIP</div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="flex mt-2 mx-2 gap-x-1 min-h-[calc(100vh-250px)]">
+        <div className="w-16 h-[calc(100vh-170px)] space-y-2">
+          <Swiper
+            direction="vertical"
+            onSwiper={setThumbsSwiper}
+            spaceBetween={10}
+            slidesPerView={7}
+            freeMode={true}
+            watchSlidesProgress={true}
+            modules={[FreeMode, Navigation, Thumbs]}
+            className="w-16 overflow-hidden h-full"
+          >
+            {[...Array(7)].map((_, i) => (
+              <SwiperSlide key={i}>
+                <div className="w-16 h-16 bg-slate-200 rounded-md"></div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+
+        <div className="flex-1 h-[calc(100vh-170px)]">
+          <Swiper
+            direction="vertical"
+            spaceBetween={50}
+            slidesPerView={1}
+            navigation={true}
+            mousewheel={true}
+            thumbs={{ swiper: thumbsSwiper }}
+            modules={[FreeMode, Navigation, Thumbs]}
+            className="flex-1 overflow-hidden h-full"
+          >
+            {[...Array(7)].map((_, i) => (
+              <SwiperSlide key={i}>
+                <div className="grid grid-cols-2 gap-1 h-full">
+                  {[...Array(platCount)].map((_, i) => (
+                    <div
+                      key={i}
+                      className={cs(
+                        'bg-slate-300 rounded-md',
+                        i === 0 && platCount % 2 === 1 && 'col-span-2',
+                      )}
+                    ></div>
+                  ))}
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </AppLayout>

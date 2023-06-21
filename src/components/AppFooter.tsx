@@ -8,7 +8,7 @@ type Props = {
 }
 function AppFooter({ active }: Props) {
   return (
-    <div className="fixed bottom-0 w-full">
+    <div className="fixed bottom-0 w-full z-30">
       <div className="bg-[url('/img/bg_basebtn.png')] bg-contain bg-center h-[80px] bg-no-repeat">
         <div className="icon ic_base_logo mx-auto relative top-[-20px]"></div>
       </div>
