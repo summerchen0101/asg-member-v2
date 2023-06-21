@@ -82,30 +82,28 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div className="flex mt-2 mx-2 gap-x-1 min-h-[calc(100vh-250px)]">
-        <div className="w-16 h-[calc(100vh-170px)] space-y-2">
+      <div className="flex mt-2 mx-2 gap-x-1 min-h-[calc(100vh-370px)]">
+        <div className="w-16 h-[calc(100vh-370px)] min-h-[495px] space-y-2">
           <Swiper
             direction="vertical"
             onSwiper={setThumbsSwiper}
             spaceBetween={10}
-            slidesPerView={7}
-            freeMode={true}
-            watchSlidesProgress={true}
+            slidesPerView={8}
             modules={[FreeMode, Navigation, Thumbs]}
             className="w-16 overflow-hidden h-full"
           >
-            {[...Array(7)].map((_, i) => (
+            {[...Array(8)].map((_, i) => (
               <SwiperSlide key={i}>
-                <div className="w-16 h-16 bg-slate-200 rounded-md"></div>
+                <div className="w-16 h-14 bg-slate-400 rounded-md">{i}</div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
 
-        <div className="flex-1 h-[calc(100vh-170px)]">
+        <div className="flex-1 h-[calc(100vh-370px)] min-h-[495px]">
           <Swiper
             direction="vertical"
-            spaceBetween={50}
+            spaceBetween={5}
             slidesPerView={1}
             navigation={true}
             mousewheel={true}
@@ -113,8 +111,8 @@ function HomePage() {
             modules={[FreeMode, Navigation, Thumbs]}
             className="flex-1 overflow-hidden h-full"
           >
-            {[...Array(7)].map((_, i) => (
-              <SwiperSlide key={i}>
+            {[...Array(8)].map((_, gi) => (
+              <SwiperSlide key={gi}>
                 <div className="grid grid-cols-2 gap-1 h-full">
                   {[...Array(platCount)].map((_, i) => (
                     <div
@@ -123,7 +121,9 @@ function HomePage() {
                         'bg-slate-300 rounded-md',
                         i === 0 && platCount % 2 === 1 && 'col-span-2',
                       )}
-                    ></div>
+                    >
+                      {gi}
+                    </div>
                   ))}
                 </div>
               </SwiperSlide>
