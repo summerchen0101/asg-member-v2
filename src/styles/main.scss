@@ -66,7 +66,10 @@ input:focus, textarea:focus, select:focus{
 
 
 table.custom-table {
-  @apply bg-white rounded-lg shadow-md w-full text-center border border-white overflow-hidden;
+  @apply w-full text-center border border-white overflow-hidden;
+  &.box {
+    @apply bg-white rounded-lg shadow-md;
+  }
   thead, tfoot {
     @apply text-gray-500 bg-slate-100 text-sm;
     th {

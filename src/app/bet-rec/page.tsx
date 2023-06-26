@@ -1,61 +1,61 @@
-import AmountSelector from '@/components/AmountSelector'
 import AppLayout from '@/components/AppLayout'
-import BankCard from '@/components/BankCard'
-import CalenderInput from '@/components/CalenderInput'
-import CsvSelector from '@/components/CsvSelector'
-import DateRangeSelector from '@/components/DateRangeSelector'
-import SelectInput from '@/components/SelectInput'
 import TabGroup from '@/components/TabGroup'
-import TradeRecord from '@/components/TradeRecord'
-import WhiteBoxTitle from '@/components/WhiteBoxTitle'
-import { mapToOpts } from '@/utils'
-import React from 'react'
+import { getWeekDates, mapToOpts } from '@/utils'
+import { startOfWeek } from 'date-fns'
 
 function BetRecPage() {
+  const thisWeekDays = getWeekDates()
+  const lastWeekDays = getWeekDates(1)
   return (
     <AppLayout title="投注紀錄">
-      <TabGroup
+      {/* <TabGroup
         options={mapToOpts({ record: '投注紀錄', history: '歷史帳務' })}
         value="record"
-      />
-      <div className="p-2">
-        <div className="white-box pb-6">
-          <WhiteBoxTitle>查詢</WhiteBoxTitle>
-          <div className="p-6 space-y-4">
-            <SelectInput
-              label="遊戲平台"
-              options={mapToOpts({ all: '全部', zg: 'ZG', gr: '好路' })}
-            />
-            <CalenderInput label="開始日期" />
-            <CalenderInput label="結束日期" />
+      /> */}
+      <div className="p-3">
+        <div className="white-box">
+          <div className="flex justify-between py-2 px-3 text-gray-600 text-sm">
+            <div className="">遊戲平台</div>
+            <div className="text-gray-500">全部</div>
           </div>
-          {/* <DateRangeSelector /> */}
-          <div className="bg-gray-100 rounded mx-4 pt-1 pb-2 px-3">
-            <div className="text-gray-600 mb-2">快速查詢</div>
-            <div className="grid grid-cols-3 gap-1 mx-auto w-max">
-              <div className="icon btn_yellow6 text-white text-shadow text-center italic pt-1 scale-95">
-                今天
-              </div>
-              <div className="icon btn_white6 text-gray-500 italic text-center pt-1  scale-95">
-                昨天
-              </div>
-              <div className="icon btn_white6 text-gray-500 italic text-center pt-1  scale-95">
-                本週
-              </div>
-              <div className="icon btn_white6 text-gray-500 italic text-center pt-1  scale-95">
-                上週
-              </div>
-              <div className="icon btn_white6 text-gray-500 italic text-center pt-1  scale-95">
-                本月
-              </div>
-              <div className="icon btn_white6 text-gray-500 italic text-center pt-1  scale-95">
-                自選
-              </div>
+          <div className="bg-gray-400 text-white py-1.5 px-3 text-sm flex justify-between">
+            <div className="">搜尋區間</div>
+            <div className="">2023-02-06 ~ 2023-02-07</div>
+          </div>
+          <table className="custom-table">
+            <thead>
+              <tr>
+                <th>日期</th>
+                <th>筆數</th>
+                <th>輸贏</th>
+              </tr>
+            </thead>
+            <tbody>
+              {thisWeekDays.map((t) => (
+                <tr key={t}>
+                  <td>{t}</td>
+                  <td>0</td>
+                  <td>
+                    <div className="flex items-center justify-center">
+                      <div className="">0.00</div>
+                      <div className="icon ic_arrow ml-2"></div>
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <div className="flex items-center text-sm text-gray-500 bg-gradient-to-b from-gray-200 to-90% to-white">
+            <div className="flex-1 text-center py-3">
+              <div className="">總投注金額</div>
+              <div className="">0.00</div>
+            </div>
+            <div className="border-r border-slate-300 h-6"></div>
+            <div className="flex-1 text-center py-3">
+              <div className="">輸贏金額</div>
+              <div className="">0.00</div>
             </div>
           </div>
-        </div>
-        <div className="icon btn_a2_base text-primary-600 font-medium tracking-widest text-center mx-auto mt-4 pt-2">
-          查詢
         </div>
       </div>
     </AppLayout>

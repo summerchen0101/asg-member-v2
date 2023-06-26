@@ -13,7 +13,7 @@ function BetRecPage() {
         value="history"
       />
       <div className="p-3">
-        <table className="custom-table">
+        <table className="custom-table box">
           <thead>
             <tr>
               <th>日期</th>
@@ -47,7 +47,7 @@ function BetRecPage() {
           </thead>
         </table>
 
-        <table className="custom-table mt-3">
+        <table className="custom-table box mt-3">
           <thead>
             <tr>
               <th>日期</th>
