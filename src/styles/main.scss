@@ -63,3 +63,20 @@ input:focus, textarea:focus, select:focus{
 .sub-btn {
   @apply border border-yellow-600 bg-white rounded-full shadow-md text-primary-500 italic
 }
+
+
+table.custom-table {
+  @apply bg-white rounded-lg shadow-md w-full text-center border border-white overflow-hidden;
+  thead, tfoot {
+    @apply text-gray-500 bg-slate-100 text-sm;
+    th {
+      @apply font-medium py-1;
+    }
+  }
+  tbody {
+    @apply text-gray-500 text-sm;
+    th, td {
+      @apply py-2
+    }
+  }
+}
