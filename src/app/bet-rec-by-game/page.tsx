@@ -1,13 +1,9 @@
 import AppLayout from '@/components/AppLayout'
-import { LuCopy } from 'react-icons/lu'
-import {
-  BiChevronRight,
-  BiChevronsRight,
-  BiChevronLeft,
-  BiChevronsLeft,
-} from 'react-icons/bi'
+import TabGroup from '@/components/TabGroup'
+import { getWeekDates, mapToOpts } from '@/utils'
+import { startOfWeek } from 'date-fns'
 
-function BetRecPage() {
+function GameBetRecPage() {
   return (
     <AppLayout title="投注紀錄">
       {/* <TabGroup
@@ -17,13 +13,14 @@ function BetRecPage() {
       <div className="p-3">
         <div className="white-box overflow-hidden">
           <div className="bg-gray-400 text-white py-1.5 px-3 text-sm flex justify-between">
-            <div className="">遊戲名稱</div>
-            <div className="">Super體育-足球</div>
+            <div className="">遊戲商</div>
+            <div className="">Super體育</div>
           </div>
           <table className="custom-table">
             <thead>
               <tr>
-                <th className="w-1/2">注單號</th>
+                <th>遊戲名稱</th>
+                <th>筆數</th>
                 <th>投注金額</th>
                 <th>輸贏</th>
               </tr>
@@ -31,32 +28,18 @@ function BetRecPage() {
             <tbody>
               {[...Array(5)].map((_, i) => (
                 <tr key={i}>
+                  <td>足球</td>
+                  <td>0</td>
+                  <td>0.00</td>
                   <td>
                     <div className="flex items-center justify-center">
-                      <div className="">120701491559831</div>
-                      <LuCopy className="ml-2 text-base text-gray-400" />
+                      <div className="">0.00</div>
+                      <div className="icon ic_arrow ml-2"></div>
                     </div>
                   </td>
-                  <td>0.00</td>
-                  <td>0.00</td>
                 </tr>
               ))}
             </tbody>
-            <tfoot>
-              <tr>
-                <td colSpan={3}>
-                  <div className="py-1.5 px-4 flex justify-center">
-                    <div className="flex items-center gap-x-8">
-                      <BiChevronsLeft className="text-xl" />
-                      <BiChevronLeft className="text-xl" />
-                      <div className="">1 / 1</div>
-                      <BiChevronRight className="text-xl" />
-                      <BiChevronsRight className="text-xl" />
-                    </div>
-                  </div>
-                </td>
-              </tr>
-            </tfoot>
           </table>
           <div className="flex items-center text-sm text-gray-500 bg-gradient-to-b from-gray-200 to-90% to-white">
             <div className="flex-1 text-center py-3">
@@ -75,4 +58,4 @@ function BetRecPage() {
   )
 }
 
-export default BetRecPage
+export default GameBetRecPage
