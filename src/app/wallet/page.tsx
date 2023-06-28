@@ -19,7 +19,7 @@ function WalletPage() {
               </div>
             </div>
             <div className="flex-1"></div>
-            <div className="sub-btn text-sm px-4 py-1">一鍵回收</div>
+            <div className="sub-btn px-4 py-1">一鍵回收</div>
           </div>
           <div className="flex justify-between px-10 my-3">
             <div className="text-center text-gray-400 text-sm">

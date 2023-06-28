@@ -61,9 +61,12 @@ input:focus, textarea:focus, select:focus{
 // }
 
 .sub-btn {
-  @apply border border-yellow-600 bg-white rounded-full shadow-md text-primary-500 italic
+  @apply text-sm border border-yellow-600 bg-white rounded-full shadow-md text-primary-500 italic;
 }
 
+.box-downside-btn {
+  @apply text-primary-600 font-medium tracking-widest text-center mx-auto mt-4 pt-2;
+}
 
 table.custom-table {
   @apply w-full text-center border border-white overflow-hidden;

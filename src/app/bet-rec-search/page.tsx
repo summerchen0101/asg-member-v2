@@ -48,9 +48,7 @@ function BetRecSearchPage() {
             </div>
           </div>
         </div>
-        <div className="icon btn_a2_base text-primary-600 font-medium tracking-widest text-center mx-auto mt-4 pt-2">
-          查詢
-        </div>
+        <div className="icon btn_a2_base box-downside-btn">查詢</div>
       </div>
     </AppLayout>
   )

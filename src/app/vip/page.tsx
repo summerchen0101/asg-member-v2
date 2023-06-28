@@ -24,9 +24,7 @@ function page() {
       <div className="px-4">
         <div className="white-box min-h-[300px] mt-4">
           <WhiteBoxTitle
-            addonAfter={
-              <div className="sub-btn px-2 py-0.5 text-sm">VIP詳情</div>
-            }
+            addonAfter={<div className="sub-btn px-2 py-0.5">VIP詳情</div>}
           >
             尊享權益
           </WhiteBoxTitle>
