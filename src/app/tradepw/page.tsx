@@ -1,30 +1,32 @@
 import AppLayout from '@/components/AppLayout'
 import MyInput from '@/components/MyInput'
-import SelectInput from '@/components/SelectInput'
 import WhiteBoxTitle from '@/components/WhiteBoxTitle'
-import { mapToOpts } from '@/utils'
 
-function CreateCardPage() {
+function TradePwEditPage() {
   return (
     <AppLayout title="個人資料">
       <div className="p-3">
         <div className="white-box pb-6">
-          <WhiteBoxTitle>修改密碼</WhiteBoxTitle>
+          <WhiteBoxTitle>設定取款密碼</WhiteBoxTitle>
           <div className="p-6 space-y-6">
             <MyInput
-              label="當前密碼"
-              placeholder="請輸入原密碼"
+              label="取款密碼"
+              placeholder="請輸入取款密碼"
               type="password"
             />
             <MyInput
-              label="新密碼"
-              placeholder="請設定新密碼"
-              type="password"
-            />
-            <MyInput
-              label="確認新密碼"
+              label="確認密碼"
               placeholder="請再次輸入新密碼"
               type="password"
+            />
+            <MyInput
+              label="驗證碼"
+              placeholder="請輸入驗證碼"
+              afterAddon={
+                <div className="bg-gradient-to-b from-[#c3962f] to-[#eaca72] text-white rounded-full py-1 px-2 text-sm whitespace-nowrap ml-1">
+                  取得驗證碼
+                </div>
+              }
             />
           </div>
           <div className="flex gap-x-12 justify-center">
@@ -37,4 +39,4 @@ function CreateCardPage() {
   )
 }
 
-export default CreateCardPage
+export default TradePwEditPage

@@ -1,7 +1,7 @@
 'use client'
 
 import cs from 'classnames'
-import React, { useState } from 'react'
+import React, { ReactNode, useState } from 'react'
 import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai'
 
 type Props = {
@@ -12,6 +12,7 @@ type Props = {
   onChange?: (val: string) => void
   disabled?: boolean
   readOnly?: boolean
+  afterAddon?: ReactNode
 }
 function MyInput({
   label,
@@ -21,13 +22,16 @@ function MyInput({
   onChange,
   disabled,
   readOnly,
+  afterAddon,
 }: Props) {
   const [showText, setShowText] = useState(false)
   return (
     <div
       className={cs('flex px-2 pb-1', !readOnly && 'border-b border-slate-300')}
     >
-      <div className="text-slate-500 font-medium">{label}:</div>
+      <div className="text-slate-500 font-medium whitespace-nowrap">
+        {label}:
+      </div>
       <div className="flex flex-1 items-center justify-end">
         <input
           type={type === 'password' && showText ? 'text' : type}
@@ -46,6 +50,7 @@ function MyInput({
             {showText ? <AiOutlineEye /> : <AiOutlineEyeInvisible />}
           </div>
         ) : null}
+        {afterAddon}
       </div>
     </div>
   )
