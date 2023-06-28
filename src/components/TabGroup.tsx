@@ -15,7 +15,7 @@ function TabGroup({ options, value, onChange }: Props<string | number>) {
         <div
           key={t.value}
           className={cs(
-            'border-b-[3px] px-8 -mb-0.5 pb-1.5',
+            'border-b-[3px] px-7 -mb-0.5 pb-1.5',
             value === t.value
               ? 'border-primary-500 text-primary-500'
               : 'border-transparent text-gray-400',
