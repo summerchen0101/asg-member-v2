@@ -1,16 +1,8 @@
 import AppLayout from '@/components/AppLayout'
-import { LuCopy } from 'react-icons/lu'
-import {
-  BiChevronRight,
-  BiChevronsRight,
-  BiChevronLeft,
-  BiChevronsLeft,
-} from 'react-icons/bi'
-import WhiteBoxTitle from '@/components/WhiteBoxTitle'
-import SelectInput from '@/components/SelectInput'
-import { mapToOpts } from '@/utils'
-import CalenderInput from '@/components/CalenderInput'
 import MyInput from '@/components/MyInput'
+import SelectInput from '@/components/SelectInput'
+import WhiteBoxTitle from '@/components/WhiteBoxTitle'
+import { mapToOpts } from '@/utils'
 
 function CreateCardPage() {
   return (
