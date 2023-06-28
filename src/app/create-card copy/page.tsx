@@ -26,7 +26,9 @@ function CreateCardPage() {
         </div>
         <div className="white-box pb-2 mt-3">
           <WhiteBoxTitle
-            addonAfter={<div className="sub-btn px-2 py-0.5">查看範例</div>}
+            addonAfter={
+              <div className="sub-btn text-sm px-2 py-0.5">查看範例</div>
+            }
           >
             填寫銀行資料
           </WhiteBoxTitle>
