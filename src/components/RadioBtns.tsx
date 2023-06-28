@@ -17,12 +17,12 @@ function RadioBtns({
   className,
 }: Props<string | number>) {
   return (
-    <div className={cs('flex gap-x-0.5', className)}>
+    <div className={cs('space-x-1', className)}>
       {options?.map((t) => (
         <div
           key={t.value}
           className={cs(
-            'icon text-center italic pt-1 scale-95',
+            'icon text-center italic pt-1.5 text-sm inline-block align-middle',
             t.value === value
               ? 'btn_yellow6 text-white text-shadow'
               : 'btn_white6 text-gray-500',
