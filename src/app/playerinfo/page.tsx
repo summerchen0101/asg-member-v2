@@ -1,8 +1,10 @@
 import AppLayout from '@/components/AppLayout'
+import BoxDescItem from '@/components/BoxDescItem'
 import MyInput from '@/components/MyInput'
 import SelectInput from '@/components/SelectInput'
 import WhiteBoxTitle from '@/components/WhiteBoxTitle'
 import { mapToOpts } from '@/utils'
+import { FaEdit } from 'react-icons/fa'
 
 function PlayerInfoPage() {
   return (
@@ -10,50 +12,56 @@ function PlayerInfoPage() {
       <div className="p-3">
         <div className="white-box pb-2">
           <WhiteBoxTitle>基本資料</WhiteBoxTitle>
-          <div className="py-3 px-5 space-y-2">
-            <MyInput label="真實姓名" value="王小明" readOnly />
-            <MyInput label="暱稱" value="板橋金乘五" />
-            <MyInput label="帳號" value="ABC12345678" readOnly />
-            <MyInput label="生日" value="1990-05-20" readOnly />
-            <MyInput label="手機" value="0910666888" readOnly />
+          <div className="py-3 px-5 space-y-3">
+            <BoxDescItem label="真實姓名">王小明</BoxDescItem>
+            <BoxDescItem label="暱稱" allowEdit>
+              板橋金乘五
+            </BoxDescItem>
+            <BoxDescItem label="帳號">ABC12345678</BoxDescItem>
+            <BoxDescItem label="生日" allowEdit>
+              1990-05-20
+            </BoxDescItem>
+            <BoxDescItem label="手機">0910666888</BoxDescItem>
           </div>
         </div>
         <div className="white-box pb-2 mt-3">
-          <WhiteBoxTitle
-            addonAfter={<div className="sub-btn px-2 py-0.5">查看範例</div>}
-          >
-            填寫銀行資料
-          </WhiteBoxTitle>
-          <div className="py-3 pl-16 space-y-3">
-            <div className="flex items-center gap-x-4">
-              <div className="w-40">
-                <img src="/img/upload_bg1.png" alt="" />
-              </div>
-              <div className="">
-                <div className="text-gray-400">身分證</div>
-                <div className="text-gray-700">(正面)</div>
-              </div>
-            </div>
-            <div className="flex items-center gap-x-4">
-              <div className="w-40">
-                <img src="/img/upload_bg2.png" alt="" />
-              </div>
-              <div className="">
-                <div className="text-gray-400">身分證</div>
-                <div className="text-gray-700">(反面)</div>
-              </div>
-            </div>
-            <div className="flex items-center gap-x-4">
-              <div className="w-40">
-                <img src="/img/upload_bg3.png" alt="" />
-              </div>
-              <div className="">
-                <div className="text-gray-400">帳戶存摺</div>
-              </div>
-            </div>
+          <WhiteBoxTitle>聯絡資訊</WhiteBoxTitle>
+          <div className="py-3 px-5 space-y-3">
+            <BoxDescItem
+              label="LineID"
+              allowEdit
+              icon={<div className="icon ic_line"></div>}
+            >
+              shaumin123
+            </BoxDescItem>
+            <BoxDescItem
+              label="WeChat"
+              allowEdit
+              icon={<div className="icon ic_wechat"></div>}
+            >
+              johnnygogo
+            </BoxDescItem>
+            <BoxDescItem
+              label="Telegram"
+              allowEdit
+              icon={<div className="icon ic_telegram"></div>}
+            >
+              johnny2020
+            </BoxDescItem>
           </div>
         </div>
-        <div className="icon btn_a2_base box-downside-btn">送出</div>
+        <div className="white-box mt-3 flex justify-between items-center py-2 pl-6 pr-4">
+          <div className="text-primary-500">登入密碼</div>
+          <div className="icon btn_a1_base text-primary-600 flex items-center justify-center">
+            修改
+          </div>
+        </div>
+        <div className="white-box mt-3 flex justify-between items-center py-2 pl-6 pr-4">
+          <div className="text-primary-500">取款密碼</div>
+          <div className="icon btn_a1_base text-primary-600 flex items-center justify-center">
+            立即設定
+          </div>
+        </div>
       </div>
     </AppLayout>
   )
