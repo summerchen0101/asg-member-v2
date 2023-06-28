@@ -24,7 +24,7 @@ function SelectInput({
       <div className="text-slate-500 font-medium">{label}:</div>
       <div className="flex flex-1 items-center justify-end">
         <select
-          className="border-0 m-0 py-0 text-slate-400"
+          className="border-0 m-0 py-0 text-slate-400 text-right -mr-5"
           placeholder={placeholder}
           value={value}
           defaultValue={defaultValue}

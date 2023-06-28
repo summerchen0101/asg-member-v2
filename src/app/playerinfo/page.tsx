@@ -4,24 +4,18 @@ import SelectInput from '@/components/SelectInput'
 import WhiteBoxTitle from '@/components/WhiteBoxTitle'
 import { mapToOpts } from '@/utils'
 
-function CreateCardPage() {
+function PlayerInfoPage() {
   return (
-    <AppLayout title="新增銀行卡">
+    <AppLayout title="個人資料">
       <div className="p-3">
         <div className="white-box pb-2">
-          <WhiteBoxTitle>填寫銀行資料</WhiteBoxTitle>
-          <div className="p-6 space-y-5">
-            <MyInput label="持卡人姓名" placeholder="請輸入真實姓名" />
-            <SelectInput
-              label="銀行名稱"
-              value="0"
-              options={mapToOpts({
-                '0': '請選擇銀行',
-                '822': '中國信託(822)',
-                '013': '國泰世華(013)',
-              })}
-            />
-            <MyInput label="銀行帳號" placeholder="請輸入帳號" />
+          <WhiteBoxTitle>基本資料</WhiteBoxTitle>
+          <div className="py-3 px-5 space-y-2">
+            <MyInput label="真實姓名" value="王小明" readOnly />
+            <MyInput label="暱稱" value="板橋金乘五" />
+            <MyInput label="帳號" value="ABC12345678" readOnly />
+            <MyInput label="生日" value="1990-05-20" readOnly />
+            <MyInput label="手機" value="0910666888" readOnly />
           </div>
         </div>
         <div className="white-box pb-2 mt-3">
@@ -65,4 +59,4 @@ function CreateCardPage() {
   )
 }
 
-export default CreateCardPage
+export default PlayerInfoPage
